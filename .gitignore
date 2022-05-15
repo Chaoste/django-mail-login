@@ -1,2 +1,6 @@
 *.sqlite3
 *.png
+
+!medium/*.png
+
+.vscode
