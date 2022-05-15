@@ -64,3 +64,16 @@ $ python manage.py createsuperuser
 **After logout, try to login with email and password for superadmin**
 
 ![Log In](medium/login-fail-mail.png)
+
+### 5. Change Authentication to use Email instead of Username
+
+Initially, create a custom user model: https://docs.djangoproject.com/en/dev/topics/auth/customizing/#using-a-custom-user-model-when-starting-a-project
+
+Followed for model: https://stackoverflow.com/a/43209322
+
+Then add UserManager, etc. like explained in here: https://www.fomfus.com/articles/how-to-use-email-as-username-for-django-authentication-removing-the-username/
+
+Fix translations import like here (for latest Django version): https://forum.djangoproject.com/t/importerror-cannot-import-name-ugettext-lazy-from-django-utils-translation/10943/4
+
+
+TODO: Give some explanations (see commits in changelog)
